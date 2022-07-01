@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 use rand::Rng;
-use _7_packages_modules_crates::{eat_at_house, eat_at_restaurant_fourth_time};
+use _7_packages_modules_crates::{ eat_at_house, eat_at_restaurant_fourth_time, front_of_house};
 
 
 // use std::cmp::Ordering;
@@ -63,5 +63,5 @@ fn main() {
     eat_at_house();
     // when a package contains lib and main crates : https://stackoverflow.com/questions/57756927/rust-modules-confusion-when-there-is-main-rs-and-lib-rs
     eat_at_restaurant_fourth_time();
-
+    
 }

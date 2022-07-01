@@ -343,20 +343,20 @@ fn find_mode(numbers: &mut Vec<i32>) -> i32 {
     return currentHighest;
 }
 
-fn to_pig_latin(inStr: String) -> String {
-    let first_char = inStr.chars().next();
+fn to_pig_latin(in_str: String) -> String {
+    let first_char = in_str.chars().next();
     if let Some(c) = first_char  {
         if c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' {
-            format!("{}-{}", inStr, "hay")
+            format!("{}-{}", in_str, "hay")
         } else {
-            if let Some(rem) = inStr.strip_prefix(c) {
+            if let Some(rem) = in_str.strip_prefix(c) {
                 format!("{}-{}{}", rem, c, "ay")
             } else {
-                inStr.to_string()
+                in_str.to_string()
             }
         }
     } else {
-        inStr.to_string()
+        in_str.to_string()
     }
 }
 
